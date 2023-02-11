@@ -1,0 +1,101 @@
+body{
+    width:960px;
+    align-items: center;
+    margin: auto;
+}
+header{
+    grid-area:header;
+    height: 55pt;
+    background-color: rgb(37, 59, 97);
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: bisque;
+    font-size: 45pt;
+    
+  }
+
+#hero-image img{
+    height: 300px;
+    width: 960px;
+    position: relative;
+}
+
+.heading{
+    position: absolute;
+    bottom: 400px;
+    color: rgb(15, 12, 85);
+    font-size: 20pt;
+    margin-top: 230px;
+    max-width: 36ch;
+    background-color: blanchedalmond;
+    margin-left: 10px;
+    text-shadow: 1px 1px rgb(131, 106, 67);
+}
+
+#gallery{
+    text-align: center;
+    font-family: Helvetica,Arial, sans-serif;
+    font-size: 30pt;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+.gridbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px 150px 150px;
+    margin: auto;
+    padding:5px;
+    width: 70%;
+    grid-gap: 10px;
+    margin-top: 20px ;
+    margin-bottom: 20px;
+}
+
+.gridbox div{
+    border: 1px solid black;
+}
+
+.gridbox div img{
+    width: 100%;
+    height: 100%; 
+}
+
+.gridbox div:nth-child(2){
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.gridbox div:nth-child(5) {
+    grid-column: span 2;
+    text-align: center;
+    color: black;
+    font-size: 20pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.gridbox div:nth-child(6){
+    grid-row: span 2;
+}
+
+.gridbox div:nth-child(7) {
+    grid-column: span 3;  
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(37, 59, 97);
+    height: 160px;
+    
+}
+
+li{
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    
+}
